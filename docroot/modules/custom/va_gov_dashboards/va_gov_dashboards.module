@@ -38,6 +38,7 @@ function va_gov_dashboards_theme($existing, $type, $theme, $path) {
         'description' => '',
         'action' => '',
         'nid' => '',
+        'anchor' => '',
       ],
     ],
   ];

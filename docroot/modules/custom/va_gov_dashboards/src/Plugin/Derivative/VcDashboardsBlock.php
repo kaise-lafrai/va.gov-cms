@@ -86,6 +86,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
         'description' => 'Provide info that helps Veterans prepare for their visit.',
         'action' => 'Go to visitor info',
         'nid' => $node_id,
+        'anchor' => '#prepare-for-your-visit',
         'image' => 'visitor_information.svg',
       ],
       'services' => [
@@ -93,6 +94,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
         'description' => 'List the services that Veterans can receive at your facility.',
         'action' => 'Go to services',
         'nid' => $node_id,
+        'anchor' => '#edit-field-health-services',
         'image' => 'services.svg',
       ],
       'featured_content' => [
@@ -100,6 +102,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
         'description' => 'Highlight up to two Vet center activities, such as events or programs',
         'action' => 'Go to featured content',
         'nid' => $node_id,
+        'anchor' => '#featured-content',
         'image' => 'featured_content.svg',
       ],
       'operating_status' => [
@@ -107,6 +110,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
         'description' => 'Flag temporary changes to hours and operations for the main location.',
         'action' => 'Update operating status',
         'nid' => $node_id,
+        'anchor' => '#operating-status',
         'image' => 'operating_status.svg',
       ],
       'vet_center_page' => [
@@ -114,6 +118,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
         'description' => 'Manage all main location page content.',
         'action' => 'View',
         'nid' => $node_id,
+        'anchor' => '',
         'image' => 'main_vet_center_page.svg',
       ],
     ];
@@ -143,6 +148,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
             'description' => 'Manage the page introduction and select nearby locations.',
             'action' => 'View',
             'nid' => $vc_locations_node_id,
+            'anchor' => '',
             'image' => 'locations_page.svg',
           ];
         }
@@ -154,6 +160,7 @@ class VcDashboardsBlock extends DeriverBase implements ContainerDeriverInterface
           $this->derivatives[$key]['description'] = $panel['description'];
           $this->derivatives[$key]['action'] = $panel['action'];
           $this->derivatives[$key]['nid'] = $panel['nid'];
+          $this->derivatives[$key]['anchor'] = $panel['anchor'];
         }
       }
     }
